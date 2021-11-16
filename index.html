@@ -1,0 +1,126 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Motive</title>
+
+    <base href="/" />
+ 
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <!-- <script>src="https://sdk.snapkit.com/js/v1/login.js"</script> -->
+    <link href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" rel="stylesheet">
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>  
+
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script> -->
+<!-- 
+    <script>
+      window.snapKitInit = () => {
+      //  const snapKitInit = () => {
+        var loginButtonIconId = 'my-login-button-target';
+        // Mount Login Button
+        snap.loginkit.mountButton(loginButtonIconId, {
+          clientId: 'f1a81f8c-e8e7-4b47-b43b-1ee06951ac03',
+          redirectURI: 'https://test1619.page.link/DSF9',
+          scopeList: [
+            'user.display_name',
+            'user.bitmoji.avatar',
+            'user.external_id'
+          ], handleResponseCallback: function() {
+          snap.loginkit.fetchUserInfo().then(
+            function (result) {
+              alert("Triggering?")
+              //document.getElementById("display_name").innerHTML =
+             // var snap_fullname = result.data.me.displayName;
+              window.localStorage.setItem("snap_fullname", result.data.me.displayName);
+              // console.log("index snap storage: " + snap_fullname)
+              //document.getElementById("bitmoji").src =
+              //var bitmoji_avatar = result.data.me.bitmoji.avatar;
+              window.localStorage.setItem("bitmoji_avatar", result.data.me.bitmoji.avatar);
+              window.localStorage.setItem("signUpStage", "third")
+              //document.getElementById("external_id").src =
+              //  result.data.me.externalId;       
+              console.log("Snap done: " + window.localStorage.getItem("snap_fullname"))       
+            },
+            function (err) {
+              console.log(err); // Error
+            }
+          );
+        },
+      });
+    };
+
+    // const element = <div id="my-login-button-target"></div>
+
+    // ReactDOM.render(element, document.getElementById('root'));    
+
+  //   (function (d, s, id) {
+  //   var js,
+  //   sjs = d.getElementsByTagName(s)[0];
+  //   if (d.getElementById(id)) return;
+  //   js = d.createElement(s);
+  //   js.id = id;
+  //   js.src = "https://sdk.snapkit.com/js/v1/login.js";
+  //   alert("TEST")
+  //   sjs.parentNode.insertBefore(js, sjs);
+  // })(document, "script", "loginkit-sdk"); 
+    </script>     -->
+  </body>
+</html>

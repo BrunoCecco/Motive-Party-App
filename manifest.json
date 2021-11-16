@@ -1,0 +1,46 @@
+{
+  "short_name": "Motive",
+  "name": "Motive",  
+  "icons": [
+    { 
+      "src": "assets/icon/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }, 
+    {
+      "src": "assets/images/logo.svg"
+    },
+    {
+      "src": "assets/icon/balloon-outline.svg"    
+    },
+    {
+      "src": "assets/icon/HOME.svg"    
+    },        
+    {
+      "src": "assets/icon/HOME_NOTIF.svg"    
+    },    
+    {
+      "src": "assets/icon/Memories.svg"    
+    },
+    {
+      "src": "assets/icon/Create.svg"    
+    },
+    {
+      "src": "assets/icon/People.svg"    
+    },
+    {
+      "src": "assets/icon/Person.svg"    
+    },
+    {
+      "src": "assets/icon/MY_PARTIES.svg"    
+    },
+    {
+      "src": "assets/icon/MY_PARTIES.svg"    
+    }    
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,26 @@
+{
+  "appId": "com.charke.partyapp",
+  "appName": "Motive",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",  
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0,
+      "launchAutoHide": false,
+      "backgroundColor": "#00000000",
+      "androidSplashResourceName": "splash",
+      "spinnerColor": "#FFFF00",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    }
+  },
+  "cordova": {}
+}
